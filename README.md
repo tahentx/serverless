@@ -5,5 +5,8 @@ training app to integrate various AWS services and ReactJS
 
 Git and github
 HTML and CSS 
-
+Route53
+CloudFront
+S3 
+CodeBuild
 
