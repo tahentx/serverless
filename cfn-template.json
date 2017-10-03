@@ -1,6 +1,14 @@
 
 {
       "AWSTemplateFormatVersion" : "2010-09-09",
+      "Parameters" : {
+          "BucketName" : {
+             "Description" : "Name of MyS3Bucket",
+             "Type" : "AWS::S3::Bucket",
+             "Default" : "mys3bucketacloudgurutraining"
+         }
+      },
+
       "Resources" : {
           "S3Bucket" : {
              "Type" : "AWS::S3::Bucket",
