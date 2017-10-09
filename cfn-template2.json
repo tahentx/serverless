@@ -1,3 +1,5 @@
+// Amazon CloudFormation template to create VPC environment
+
 {
   "Parameters": {
     "CIDRRange": {
