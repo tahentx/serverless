@@ -61,6 +61,9 @@
         "VpcId": { "Ref": "VPCBase" }
       }
     },
+
+    // as a architectural consideration, publicnet subnet 1 and public subnet 2 are in separate availaibility zones for resilience
+
     "PrivateNetAZ1": {
       "Type": "AWS::EC2::Subnet",
       "Properties": {
