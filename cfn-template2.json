@@ -9,6 +9,10 @@
       "AllowedValues": ["10.250.0.0","10.251.0.0"]
     }
   },
+
+// CIDRRange dictates networking information
+
+
   "Mappings": {
     "VPCRanges": {
       "10.250.0.0": {
