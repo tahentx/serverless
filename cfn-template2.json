@@ -189,6 +189,9 @@
         "Domain" : "vpc"
       }
     },
+
+    // EIP stands for elastic IP address; used for nat instances
+    
     "NATAZ1Route" : {
       "Type" : "AWS::EC2::Route",
       "Properties" : {
