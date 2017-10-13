@@ -12,7 +12,6 @@
 
 // CIDRRange dictates networking information
 
-
   "Mappings": {
     "VPCRanges": {
       "10.250.0.0": {
@@ -29,6 +28,9 @@
       }
     }
   },
+
+  // VPC consists of two availability zones, two private subnets 
+
   "Resources": {
     "VPCBase": {
       "Type": "AWS::EC2::VPC",
