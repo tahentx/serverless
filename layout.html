@@ -15,28 +15,7 @@
 	<h2>Layout Configuration</h2><br>
 	<h3>Please Select Your Suppliers</h3><br>
 	<form method="POST">
-
-	<select>
-		<option value="ABB">ABB</option>
-		<option value="SMA">SMA</option>
-		<option value="Huawei">Huawei</option>
-	</select>
-
-
-	<select>
-		<option value="ABB">ABB</option>
-		<option value="SMA">SMA</option>
-		<option value="Huawei">Huawei</option>
-	</select>
-
-	
-	<select>
-		<option value="ABB">ABB</option>
-		<option value="SMA">SMA</option>
-		<option value="Huawei">Huawei</option>
-	</select>
-
-		<div class="dropdown show">
+		<!-- <div class="dropdown show">
 		  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		    Inverter 
 		  </a>
@@ -46,7 +25,12 @@
 		    <a class="dropdown-item" href="#">SMA</a>
 		    <a class="dropdown-item" href="#">Huawei</a>
 		  </div>
-		</div><br>
+		</div><br> -->
+		<select id="inverter">
+			<option value="ABB">ABB</option>
+			<option value="SMA">SMA</option>
+			<option value="Huawei" selected="selected">Huawei</option>
+		</select>
 
 		<div class="dropdown show">
 		  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -88,8 +72,9 @@
 	
 'use strict';
 
-var el = document.getElementsByTagName('select');
-alert(el.length);
+var inv = document.getElementById('inverter');
+var inverterSelection = inv.options[inv.selectedIndex].text;
+console.log(inverterSelection);
 
 
 </script>
